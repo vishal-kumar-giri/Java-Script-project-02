@@ -1,0 +1,86 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+   body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      background: #5d199c;
+  }
+  
+  h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+  }
+  
+  form {
+      margin-bottom: 20px;
+  }
+  
+  #search-box {
+      padding: 10px;
+      width: 60%;
+      max-width: 400px;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+  #search-button {
+      padding: 10px 15px;
+      font-size: 1rem;
+      border: none;
+      background-color: #007BFF;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  #search-button:hover {
+      background-color: #0056b3;
+  }
+  
+  #search-result {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensure uniform columns */
+      gap: 15px; /* Spacing between images */
+      margin: 20px auto;
+      max-width: 90%;
+  }
+  
+  #search-result img {
+      width: 100%;
+      height: 200px; /* Ensures uniform height */
+      object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 1s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  }
+  
+  #search-result img:hover {
+      transform: scale(1.75); /* Slight zoom-in effect */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  #show-more-btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      background-color: #28a745;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+      margin-top: 20px;
+  }
+  
+  #show-more-btn:hover {
+      background-color: #218838;
+  }
+  
